@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { ReactNode } from "react";
+
 export default function Home() {
   // ======== 請改這裡的資料 ========
   const profile = {
@@ -41,7 +44,7 @@ export default function Home() {
   
   // ======== 到這裡結束 ========
 
-  const LinkBtn = ({ href, children }: { href: string; children: any }) => (
+  const LinkBtn = ({ href, children }: { href: string; children: ReactNode }) => (
     <a
       href={href}
       className="rounded border px-3 py-1 text-sm hover:bg-gray-50"
@@ -72,7 +75,7 @@ export default function Home() {
       {/* 首屏 */}
       <header className="mx-auto max-w-5xl px-4 pt-28 pb-12">
         <div className="flex items-center gap-6">
-          <img
+          <Image
             src={profile.avatar}
             alt={profile.nameEn}
             className="h-24 w-24 rounded-full object-cover border"
@@ -86,9 +89,9 @@ export default function Home() {
               <a href={profile.cv} className="rounded bg-gray-900 px-4 py-2 text-white">
                 Download CV
               </a>
-              {profile.scholar && <LinkBtn href={profile.scholar}>Google Scholar</LinkBtn>}
+              {/* {profile.scholar && <LinkBtn href={profile.scholar}>Google Scholar</LinkBtn>}
               {profile.github && <LinkBtn href={profile.github}>GitHub</LinkBtn>}
-              {profile.linkedin && <LinkBtn href={profile.linkedin}>LinkedIn</LinkBtn>}
+              {profile.linkedin && <LinkBtn href={profile.linkedin}>LinkedIn</LinkBtn>} */}
             </div>
           </div>
         </div>
@@ -116,11 +119,11 @@ export default function Home() {
                 {p.highlight && (
                   <div className="mt-2 text-sm italic">{p.highlight}</div>
                 )}
-                <div className="mt-3 flex flex-wrap gap-3 text-sm">
+                {/* <div className="mt-3 flex flex-wrap gap-3 text-sm">
                   {p.pdf && <a className="underline" href={p.pdf}>PDF</a>}
                   {p.doi && <a className="underline" href={p.doi}>DOI</a>}
-                  {p.code && <a className="underline" href={p.code}>Code</a>}
-                </div>
+                  {p.code && <a className="underline" href={p.code}>Code</a>} */}
+                {/* </div> */}
               </div>
             ))}
           </div>
@@ -137,7 +140,7 @@ export default function Home() {
                 className="block rounded-xl border overflow-hidden hover:shadow"
               >
                 {p.image && (
-                  <img
+                  <Image
                     src={p.image}
                     alt={p.title}
                     className="h-44 w-full object-cover"
