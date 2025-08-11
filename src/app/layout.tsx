@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ying Kung — Prospective PhD Applicant",
     description: "Li-ion battery modeling & diagnostics; ML for lithium plating.",
-    images: ["/images/og-cover.jpg"], // 可放 png/jpg
+    images: ["/images/og-cover.jpg"],
   },
 };
 

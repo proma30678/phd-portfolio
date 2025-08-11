@@ -50,3 +50,6 @@ body {
 .project-card span {
   color: var(--text-primary);
 }
+
+/* globals.css */
+.justify { text-align: justify; }
