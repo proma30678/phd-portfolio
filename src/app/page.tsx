@@ -106,7 +106,7 @@ export default function Home() {
             Publications
           </h3>
           <ul className="space-y-3 list-disc pl-5 text-[17px] md:text-[18px] text-black leading-[1.9] tracking-[0.01em] justify [text-indent:1.75em]">
-            {publications.slice(0, 2).map((p: any, i: number) => (
+            {publications.slice(0, 2).map((p: { title: string; authors: string; venue: string }, i: number) => (
               <li key={i}>
                 <div className="font-bold">{p.title}</div>
                 <div className="text-sm">{p.authors} — {p.venue}</div>
@@ -130,7 +130,7 @@ export default function Home() {
             Education
           </h3>
           <ol className="border-l pl-6 space-y-6 text-[17px] md:text-[18px] text-black leading-[1.9] tracking-[0.01em] justify [text-indent:1.75em]">
-            {timeline.slice(0, 2).map((x: any, i: number) => (
+            {timeline.slice(0, 2).map((x: { time: string; label: string }, i: number) => (
               <li key={i} className="relative pl-4">
                 <span className="absolute -left-2 top-2 h-3 w-3 rounded-full bg-black" />
                 <div className="text-sm">{x.time}</div>
