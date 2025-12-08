@@ -16,7 +16,7 @@ export const profile = {
     {
       title: "Predicting the onset of lithium plating...",
       authors: "Ying Kung*, ...",
-      venue: "Under Review at Energy Storage Materials",
+      venue: "Published at Energy Storage Materials",
       highlight: "<strong>Voltage-based diagnostic framework</strong> for detecting <strong>lithium plating onset</strong> without reference electrodes or destructive tests. Introduces the <strong>pseudo-P curve</strong>, constructed from the derivative of charging overpotential with respect to lithium inventory.Uses only <strong>full-cell voltage</strong> and <strong>capacity data</strong> to pinpoint plating onset time under various C-rates. Validated across different cycling datasets, achieving plating detection accuracy within 3% capacity error. Enables plating-free fast-charging protocols with <strong>>99% </strong>Coulombic efficiency by adjusting cutoff SOC in real time. Applicable to commercial cells and compatible with embedded BMS for on-board implementation.",
       image: "/images/thesis-a.jpg", // 放在 public/images
       pdf: "/files/paper.pdf" // 放在 public/files/paper
